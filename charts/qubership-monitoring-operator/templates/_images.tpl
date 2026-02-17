@@ -12,7 +12,7 @@ Image can be found from:
   {{- if .Values.monitoringOperator.image -}}
     {{- printf "%s" .Values.monitoringOperator.image -}}
   {{- else -}}
-    {{- print "ghcr.io/netcracker/qubership-monitoring-operator:main" -}}
+    {{- print "ghcr.io/testpatchesorg/qubership-monitoring-operator:1.0.0" -}}
   {{- end -}}
 {{- end -}}
 
@@ -376,7 +376,7 @@ Image can be found from:
   {{- if .Values.integrationTests.image -}}
     {{- printf "%s" .Values.integrationTests.image -}}
   {{- else -}}
-    {{- print "ghcr.io/netcracker/qubership-monitoring-int-tests:main" -}}
+    {{- print "ghcr.io/testpatchesorg/qubership-monitoring-int-tests:1.0.0" -}}
   {{- end -}}
 {{- end -}}
 
