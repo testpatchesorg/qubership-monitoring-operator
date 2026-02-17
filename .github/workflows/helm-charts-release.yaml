@@ -116,7 +116,7 @@ jobs:
 
       - name: "Chart release"
         id: update-versions
-        uses: netcracker/qubership-workflow-hub/actions/charts-values-update-action@v2.0.10
+        uses: netcracker/qubership-workflow-hub/actions/charts-values-update-action@main
         with:
           release-version: ${{ inputs.release }}
           config-file: .github/charts-values-update-config.yaml
